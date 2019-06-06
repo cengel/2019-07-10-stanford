@@ -6,7 +6,7 @@ venue: "Stanford University"        # brief name of host site without address (e
 address: "FIXME"      # Stanford Institute for Economic Policy Research (SIEPR), 366 Galvez Street, Stanford, CA (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "37.428830,-122.164900" - use https://www.latlong.net/)
+latlng: "37.428830,-122.164900"       # decimal latitude and longitude of workshop venue (e.g., "37.428830,-122.164900" - use https://www.latlong.net/)
 humandate: "Jul 10-11, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-07-10      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -14,8 +14,8 @@ enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD
 instructor: ["Claudia Engel", "Lori Ling", "Linnea Shieh", "João Rodrigues"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Ashley Jester", "Zac Painter"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["sgembala@stanford.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite: https://pad.carpentries.org/2019-07-10-stanford          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+collaborative_notes:  https://pad.carpentries.org/2019-07-10-stanford           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite:    # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -297,70 +297,62 @@ please preview your site before committing, and make sure to run
 
 
 
-<div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
-  <h3>Text Editor</h3>
+
+<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
+  <h3>R</h3>
 
   <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words. The default text editor on macOS and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
-    return to the shell.
+    <a href="https://www.r-project.org">R</a> is a programming language
+    that is especially powerful for data exploration, visualization, and
+    statistical analysis. To interact with R, we use
+    <a href="https://www.rstudio.com/">RStudio</a>.
   </p>
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+      <li role="presentation" class="active"><a data-os="windows" href="#rstats-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#rstats-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#rstats-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="editor-windows">
+      <article role="tabpanel" class="tab-pane active" id="rstats-windows">
+        <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
         <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          It is installed along with Git.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://notepad-plus-plus.org/">Notepad++</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
-          <strong>Be aware that you must
-            add its installation directory to your system path.</strong>
-          Please ask your instructor to help you do this.
-        </p>
-      </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-macos">
-        <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-          for an example on how to open nano.
-          It should be pre-installed.
-        </p>
-        <p>
-          Others editors that you can use are
-          <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+          Install R by downloading and running
+          <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
+          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+          Also, please install the
+          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+          Note that if you have separate user and admin accounts, you should run the 
+          installers as administrator (right-click on .exe file and select "Run as 
+          administrator" instead of double-clicking). Otherwise problems may occur later, 
+          for example when installing R packages.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="editor-linux">
+      <article role="tabpanel" class="tab-pane active" id="rstats-macos">
+        <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
         <p>
-          nano is a basic editor and the default that instructors use in the workshop.
-          It should be pre-installed.
+          Install R by downloading and running
+          <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
+          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
+          Also, please install the
+          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
         </p>
+      </article>
+      <article role="tabpanel" class="tab-pane active" id="rstats-linux">
         <p>
-          Others editors that you can use are
-          <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-          <a href="https://kate-editor.org/">Kate</a> or
-          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+          You can download the binary files for your distribution
+          from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or
+          you can use your package manager (e.g. for Debian/Ubuntu
+          run <code>sudo apt-get install r-base</code> and for Fedora run
+          <code>sudo dnf install R</code>).  Also, please install the
+          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
         </p>
       </article>
     </div>
   </div>
-</div> {% comment %} End of 'editor' section. {% endcomment %}
+</div> {% comment %} End of 'R' section. {% endcomment %}
 
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
   the workshop will teach Python using something other than
@@ -460,61 +452,71 @@ please preview your site before committing, and make sure to run
   {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
-<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
-  <h3>R</h3>
+
+<div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
+  <h3>Text Editor</h3>
 
   <p>
-    <a href="https://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="https://www.rstudio.com/">RStudio</a>.
+    When you're writing code, it's nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words. The default text editor on macOS and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive. If you accidentally find yourself stuck in it, hit
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
+    return to the shell.
   </p>
 
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
-      <li role="presentation" class="active"><a data-os="windows" href="#rstats-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
-      <li role="presentation"><a data-os="macos" href="#rstats-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
-      <li role="presentation"><a data-os="linux" href="#rstats-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+      <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
 
     <div class="tab-content">
-      <article role="tabpanel" class="tab-pane active" id="rstats-windows">
-        <a href="https://www.youtube.com/watch?v=q0PjTAylwoU">Video Tutorial</a>
+      <article role="tabpanel" class="tab-pane active" id="editor-windows">
         <p>
-          Install R by downloading and running
-          <a href="https://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-          Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-          Note that if you have separate user and admin accounts, you should run the 
-          installers as administrator (right-click on .exe file and select "Run as 
-          administrator" instead of double-clicking). Otherwise problems may occur later, 
-          for example when installing R packages.
+          nano is a basic editor and the default that instructors use in the workshop.
+          It is installed along with Git.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://notepad-plus-plus.org/">Notepad++</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
+          <strong>Be aware that you must
+            add its installation directory to your system path.</strong>
+          Please ask your instructor to help you do this.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="rstats-macos">
-        <a href="https://www.youtube.com/watch?v=5-ly3kyxwEg">Video Tutorial</a>
+      <article role="tabpanel" class="tab-pane active" id="editor-macos">
         <p>
-          Install R by downloading and running
-          <a href="https://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>.
-          Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+          nano is a basic editor and the default that instructors use in the workshop.
+          See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+          for an example on how to open nano.
+          It should be pre-installed.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://www.barebones.com/products/bbedit/">BBEdit</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
         </p>
       </article>
-      <article role="tabpanel" class="tab-pane active" id="rstats-linux">
+      <article role="tabpanel" class="tab-pane active" id="editor-linux">
         <p>
-          You can download the binary files for your distribution
-          from <a href="https://cran.r-project.org/index.html">CRAN</a>. Or
-          you can use your package manager (e.g. for Debian/Ubuntu
-          run <code>sudo apt-get install r-base</code> and for Fedora run
-          <code>sudo dnf install R</code>).  Also, please install the
-          <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
+          nano is a basic editor and the default that instructors use in the workshop.
+          It should be pre-installed.
+        </p>
+        <p>
+          Others editors that you can use are
+          <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+          <a href="https://kate-editor.org/">Kate</a> or
+          <a href="https://www.sublimetext.com/">Sublime Text</a>.
         </p>
       </article>
     </div>
   </div>
-</div> {% comment %} End of 'R' section. {% endcomment %}
+</div> {% comment %} End of 'editor' section. {% endcomment %}
 
 {% comment %}
 <div id="vm">
