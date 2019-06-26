@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 carpentry: "dc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc").  
                       # Be sure to update the Carpentry type in _config.yml as well.  
 venue: "Stanford University"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Stanford Institute for Economic Policy Research (SIEPR), 366 Galvez Street, Stanford, CA"      #  (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "Room Doll 320, SIEPR Gunn Building, Stanford Institute for Economic Policy Research, 366 Galvez Street, Stanford, CA"      #  (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latlng: "37.428830,-122.164900"       # decimal latitude and longitude of workshop venue (e.g., "37.428830,-122.164900" - use https://www.latlong.net/)
