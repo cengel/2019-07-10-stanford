@@ -1,3 +1,5 @@
+{% include base_path.html %}
+
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [ci]: http://communityin.org/
@@ -31,6 +33,7 @@
 [pandoc]: https://pandoc.org/
 [paper-now]: https://github.com/PeerJ/paper-now
 [python-gapminder]: https://swcarpentry.github.io/python-novice-gapminder/
+[python-setup]: {{ relative_root_path }}{% link python_setup.md %}
 [pyyaml]: https://pypi.python.org/pypi/PyYAML
 [r-markdown]: https://rmarkdown.rstudio.com/
 [rstudio]: https://www.rstudio.com/
