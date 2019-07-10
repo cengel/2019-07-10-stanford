@@ -83,22 +83,22 @@ If you run into any difficulties, please request help before the workshop begins
 Data for this lesson is taken from the [Gapminder Foundation][gapminder-foundation]
 and the [SAFI Teaching Database][safi-teaching-database].
 
-1. Download these files to your computer by clicking [this link]({{page.root}}/files/python-data.zip), 
+1. Download these files to your computer by clicking [this link]({{page.root}}/files/data.zip), 
 which will give you everything in a single compressed archive. 
 2. Create a folder named `swc-python` on your Desktop and move the downloaded 
 files into this newly created folder.
 3. Unzip the file.
 
-You should now see one folder named `python-data` in your `swc-python` folder on
+You should now see one folder named `data` in your `swc-python` folder on
 your Desktop.
 
-## Navigate to the `python-data` folder
+## Navigate to the `data` folder
 
 If you're using a Unix shell application, such as Terminal app in macOS, Console or Terminal in
 Linux, or [Git Bash](https://gitforwindows.org/) on Windows, execute the following command:
 
 ~~~
-$ cd ~/Desktop/swc-python/python-data
+$ cd ~/Desktop/swc-python/data
 ~~~
 {: .source}
 
@@ -114,7 +114,7 @@ $ cd /D %userprofile%\Desktop\swc-python\data
 
 Jupyter notebooks provide a browser-based interface for working with Python. After
 downloading and decompressing the workshop materials and navigating to the
-`python-data` folder, launch a Jupyter notebook by typing this command from the terminal:
+`data` folder, launch a Jupyter notebook by typing this command from the terminal:
 
 ~~~
 jupyter notebook
